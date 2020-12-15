@@ -60,7 +60,7 @@ function Home() {
 			</div>
 			<div className='home_row'>
 				<Product
-					id='12345422'
+					id='12345402'
 					title='Samsung 34-inch (86.40cm) Curved Monitor- 21:9 Ultrawide QLED, Thunderbolt 3 Port- LC34J791WTWXXL'
 					detail='34" Curved Ultrawide Quantum Dot Monitor with Thunderbolt 3 port to connect compatible Macs and PCs.
                     VA Panel with 1500 R Curvature ; Windows Certification: Windows10.0 ; Temperature: 10~40 ℃, Humidity: 10~80，non-condensing ; Power Supply: AC 100~240V'
