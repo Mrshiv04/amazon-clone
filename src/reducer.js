@@ -3,6 +3,9 @@ export const initialState = {
 	user: null,
 };
 
+export const getBasketTotal = (basket) =>
+	basket?.reduce((amount, item) => item.price + amount, 0);
+
 const reducer = (state, action) => {
 	console.log(action);
 	switch (action.type) {
@@ -14,7 +17,15 @@ const reducer = (state, action) => {
 			};
 		case 'REMOVE_FROM_BASKET':
 			//logic
-			return { state };
+			let newBasket = [...state.basket];
+			const index = state.basket.findIndex(
+				(basketItem) => basketItem.id === action.id
+			);
+
+			if (index >= 0) {
+				newBasket.splice(index, 1);
+			}
+			return { ...state, basket: newBasket };
 		default:
 			return state;
 	}
