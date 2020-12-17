@@ -16,8 +16,21 @@ function Checkout() {
 					alt='advertisement'
 				/>
 				{basket?.length === 0 ? (
-					<div>
-						<h1>Basket is empty</h1>
+					<div className='checkout_emptyBasket'>
+						<div style={{ width: '50%' }}>
+							<h1>Your Amazon Cart is empty.</h1>
+							<p>
+								Your shopping cart is waiting. Give it purpose – fill it with
+								groceries, clothing, household supplies, electronics and more.
+								Continue shopping on the Amazon.in homepage, learn about today's
+								deals, or visit your Wish List.
+							</p>
+						</div>
+						<img
+							style={{ width: '100px', objectFit: 'contain' }}
+							src='https://cdn1.iconfinder.com/data/icons/shopping-line-6/23/cart-broken-2-512.png'
+							alt='empty basket'
+						/>
 					</div>
 				) : (
 					<div>
